@@ -1,0 +1,35 @@
+---
+version: 2
+sources:
+- name: "samples.tpch"
+  database: "samples"
+  schema: "tpch"
+  config:
+    enabled: true
+  tables:
+  - name: "customer"
+    columns:
+    - name: "c_custkey"
+      dataType:
+        type: "Bigint"
+    - name: "c_name"
+      dataType:
+        type: "String"
+    - name: "c_address"
+      dataType:
+        type: "String"
+    - name: "c_nationkey"
+      dataType:
+        type: "Bigint"
+    - name: "c_phone"
+      dataType:
+        type: "String"
+    - name: "c_acctbal"
+      dataType:
+        type: "Decimal"
+    - name: "c_mktsegment"
+      dataType:
+        type: "String"
+    - name: "c_comment"
+      dataType:
+        type: "String"

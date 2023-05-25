@@ -1,0 +1,2337 @@
+{
+  "name" : "dbdemo",
+  "fileSystem" : {
+    "type" : "Folder",
+    "name" : "",
+    "children" : { },
+    "path" : "",
+    "editable" : true
+  },
+  "providerType" : "databricks",
+  "fabricId" : "2306",
+  "prophecyIDEFolder" : {
+    "name" : "",
+    "children" : { },
+    "path" : "",
+    "editable" : true
+  },
+  "externalSources" : {
+    "type" : "Project",
+    "name" : "",
+    "children" : [ {
+      "type" : "Catalog",
+      "name" : "hive_metastore",
+      "children" : [ {
+        "type" : "Schema",
+        "name" : "bronze",
+        "tables" : {
+          "mixpanel_events_partitioned_kk_4" : {
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "event",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "anon_id",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "browser",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "browser_version",
+              "dataType" : {
+                "type" : "Double"
+              }
+            }, {
+              "name" : "current_url",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "device",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "device_id",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "distinct_id_before_identity",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "failure_description",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "failure_reason",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "identified_id",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "initial_referrer",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "initial_referring_domain",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "insert_id",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "lib_version",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "mp_api_endpoint",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "mp_api_timestamp_ms",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "os",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "referrer",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "referring_domain",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "screen_height",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "screen_width",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "search_engine",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "user_id",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "baseBranch",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "branch",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "branchName",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "buildSystem",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "clusterId",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "clusterName",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "commitHash",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "committedBranch",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "companyname",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "component",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "copiedLanguage",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "currentBranch",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "currentLanguage",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "distinct_id",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "elementId",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "email",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "entity",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "entityId",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "error",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "event_category",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "executionUrl",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "fabric",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "fabricId",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "fabricProviderType",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "firstName",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "format",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "gitProvider",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "id",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "isConfigured",
+              "dataType" : {
+                "type" : "Boolean"
+              }
+            }, {
+              "name" : "isDatasetInfo",
+              "dataType" : {
+                "type" : "Boolean"
+              }
+            }, {
+              "name" : "isPublished",
+              "dataType" : {
+                "type" : "Boolean"
+              }
+            }, {
+              "name" : "jobId",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "language",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "mode",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "mp_lib",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "mp_processing_time_ms",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "nodeCount",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "onboarding_gem_autoconfig",
+              "dataType" : {
+                "type" : "Boolean"
+              }
+            }, {
+              "name" : "onboarding_gem_autoconfig_name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "onboarding_pipeline_landed",
+              "dataType" : {
+                "type" : "Boolean"
+              }
+            }, {
+              "name" : "pipelineName",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "processId",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "projectId",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "projectType",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "provider",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "sessionName",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "session_id",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "source",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "sourceProjectId",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "subgraphId",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "tab",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "teamId",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "time",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "type",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "uid",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "url",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "userId",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "user_type",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "utm_campaign",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "utm_content",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "utm_medium",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "utm_source",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "utm_term",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "viewType",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "workflowId",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "dt",
+              "dataType" : {
+                "type" : "Date"
+              }
+            }, {
+              "name" : "domain",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "date",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "mixpanel_events" : {
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "event",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "anon_id",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "browser",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "browser_version",
+              "dataType" : {
+                "type" : "Double"
+              }
+            }, {
+              "name" : "current_url",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "device",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "device_id",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "failure_description",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "failure_reason",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "identified_id",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "initial_referrer",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "initial_referring_domain",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "insert_id",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "lib_version",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "mp_api_endpoint",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "mp_api_timestamp_ms",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "os",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "referrer",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "referring_domain",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "screen_height",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "screen_width",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "search_engine",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "user_id",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "baseBranch",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "branch",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "clusterId",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "commitHash",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "committedBranch",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "component",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "currentBranch",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "distinct_id",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "email",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "entity",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "executionUrl",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "fabric",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "fabricId",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "fromBranch",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "id",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "jobId",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "mp_lib",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "mp_processing_time_ms",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "processId",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "projectId",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "sessionName",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "source",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "tab",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "time",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "toBranch",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "type",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "uid",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "url",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "userId",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "workflowId",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "dt",
+              "dataType" : {
+                "type" : "Date"
+              }
+            }, {
+              "name" : "customer",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "date",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "licence" : {
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "customer",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "licences",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            } ]
+          },
+          "mixpanel_events_partitioned" : {
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "event",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "anon_id",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "browser",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "browser_version",
+              "dataType" : {
+                "type" : "Double"
+              }
+            }, {
+              "name" : "current_url",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "device",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "device_id",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "failure_description",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "failure_reason",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "identified_id",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "initial_referrer",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "initial_referring_domain",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "insert_id",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "lib_version",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "mp_api_endpoint",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "mp_api_timestamp_ms",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "os",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "referrer",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "referring_domain",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "screen_height",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "screen_width",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "search_engine",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "user_id",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "baseBranch",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "branch",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "clusterId",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "commitHash",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "committedBranch",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "component",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "currentBranch",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "distinct_id",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "email",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "entity",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "executionUrl",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "fabric",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "fabricId",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "fromBranch",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "id",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "jobId",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "mp_lib",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "mp_processing_time_ms",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "processId",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "projectId",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "sessionName",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "source",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "tab",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "time",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "toBranch",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "type",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "uid",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "url",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "userId",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "workflowId",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "dt",
+              "dataType" : {
+                "type" : "Date"
+              }
+            }, {
+              "name" : "customer",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "date",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "mixpanel_events_partitioned_dummy" : {
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "event",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "anon_id",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "browser",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "browser_version",
+              "dataType" : {
+                "type" : "Double"
+              }
+            }, {
+              "name" : "current_url",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "device",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "device_id",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "distinct_id_before_identity",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "failure_description",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "failure_reason",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "identified_id",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "initial_referrer",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "initial_referring_domain",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "insert_id",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "lib_version",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "mp_api_endpoint",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "mp_api_timestamp_ms",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "os",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "referrer",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "referring_domain",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "screen_height",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "screen_width",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "search_engine",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "user_id",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "baseBranch",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "branch",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "clusterId",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "clusterName",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "commitHash",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "committedBranch",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "component",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "currentBranch",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "datasetOrPipelineId",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "distinct_id",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "email",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "entity",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "entityId",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "executionUrl",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "fabric",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "fabricId",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "fromBranch",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "id",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "jobId",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "language",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "mp_lib",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "mp_processing_time_ms",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "processId",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "projectId",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "provider",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "sessionName",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "source",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "tab",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "time",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "toBranch",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "type",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "uid",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "url",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "userId",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "utm_content",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "utm_medium",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "utm_source",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "workflowId",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "dt",
+              "dataType" : {
+                "type" : "Date"
+              }
+            }, {
+              "name" : "customer",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "date",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          }
+        }
+      }, {
+        "type" : "Schema",
+        "name" : "default",
+        "tables" : { }
+      }, {
+        "type" : "Schema",
+        "name" : "meitest",
+        "tables" : { }
+      }, {
+        "type" : "Schema",
+        "name" : "prophecy_",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "prophecy_app",
+        "tables" : {
+          "interims1859" : {
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "uid",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "interim",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "created_by",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "created_at",
+              "dataType" : {
+                "type" : "Timestamp"
+              }
+            }, {
+              "name" : "fabric_uid",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "interims2631" : {
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "uid",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "interim",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "created_by",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "created_at",
+              "dataType" : {
+                "type" : "Timestamp"
+              }
+            }, {
+              "name" : "fabric_uid",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "interims2632" : {
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "uid",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "interim",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "created_by",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "created_at",
+              "dataType" : {
+                "type" : "Timestamp"
+              }
+            }, {
+              "name" : "fabric_uid",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "interims1907" : {
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "uid",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "interim",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "created_by",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "created_at",
+              "dataType" : {
+                "type" : "Timestamp"
+              }
+            }, {
+              "name" : "fabric_uid",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "interims0" : {
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "uid",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "interim",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "created_by",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "created_at",
+              "dataType" : {
+                "type" : "Timestamp"
+              }
+            }, {
+              "name" : "fabric_uid",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "interims2091" : {
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "uid",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "interim",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "created_by",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "created_at",
+              "dataType" : {
+                "type" : "Timestamp"
+              }
+            }, {
+              "name" : "fabric_uid",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "interims786" : {
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "uid",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "interim",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "created_by",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "created_at",
+              "dataType" : {
+                "type" : "Timestamp"
+              }
+            }, {
+              "name" : "fabric_uid",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "component_runs" : {
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "uid",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "component_uri",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "pipeline_uri",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "pipeline_run_uid",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "fabric_uid",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "component_name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "interim_component_name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "component_type",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "interim_subgraph_name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "interim_process_id",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "interim_out_port",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "created_at",
+              "dataType" : {
+                "type" : "Timestamp"
+              }
+            }, {
+              "name" : "created_by",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "records",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "bytes",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "partitions",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "expired",
+              "dataType" : {
+                "type" : "Boolean"
+              }
+            }, {
+              "name" : "run_type",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "job_uri",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "branch",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "interims2474" : {
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "uid",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "interim",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "created_by",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "created_at",
+              "dataType" : {
+                "type" : "Timestamp"
+              }
+            }, {
+              "name" : "fabric_uid",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "interims2256" : {
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "uid",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "interim",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "created_by",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "created_at",
+              "dataType" : {
+                "type" : "Timestamp"
+              }
+            }, {
+              "name" : "fabric_uid",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "pipeline_runs" : {
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "uid",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "pipeline_uri",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "job_uri",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "job_run_uid",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "task_run_uid",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "status",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "fabric_uid",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "time_taken",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "rows_read",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "rows_written",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "created_at",
+              "dataType" : {
+                "type" : "Timestamp"
+              }
+            }, {
+              "name" : "created_by",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "run_type",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "input_datasets",
+              "dataType" : {
+                "type" : "Array",
+                "dataType" : {
+                  "type" : "String"
+                }
+              }
+            }, {
+              "name" : "output_datasets",
+              "dataType" : {
+                "type" : "Array",
+                "dataType" : {
+                  "type" : "String"
+                }
+              }
+            }, {
+              "name" : "workflow_code",
+              "dataType" : {
+                "type" : "Map",
+                "keyType" : {
+                  "type" : "String"
+                },
+                "valueType" : {
+                  "type" : "String"
+                }
+              }
+            }, {
+              "name" : "expired",
+              "dataType" : {
+                "type" : "Boolean"
+              }
+            }, {
+              "name" : "branch",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "pipeline_config",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "user_config",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "expected_interims",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "actual_interims",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "logs",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "interims1772" : {
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "uid",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "interim",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "created_by",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "created_at",
+              "dataType" : {
+                "type" : "Timestamp"
+              }
+            }, {
+              "name" : "fabric_uid",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          }
+        }
+      }, {
+        "type" : "Schema",
+        "name" : "prophecy_uitesting",
+        "children" : [ ]
+      } ]
+    }, {
+      "type" : "Catalog",
+      "name" : "main",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "samples",
+      "children" : [ {
+        "type" : "Schema",
+        "name" : "default",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "nyctaxi",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "tpch",
+        "tables" : {
+          "lineitem" : {
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "l_orderkey",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "l_partkey",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "l_suppkey",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "l_linenumber",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "l_quantity",
+              "dataType" : {
+                "type" : "Decimal"
+              }
+            }, {
+              "name" : "l_extendedprice",
+              "dataType" : {
+                "type" : "Decimal"
+              }
+            }, {
+              "name" : "l_discount",
+              "dataType" : {
+                "type" : "Decimal"
+              }
+            }, {
+              "name" : "l_tax",
+              "dataType" : {
+                "type" : "Decimal"
+              }
+            }, {
+              "name" : "l_returnflag",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "l_linestatus",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "l_shipdate",
+              "dataType" : {
+                "type" : "Date"
+              }
+            }, {
+              "name" : "l_commitdate",
+              "dataType" : {
+                "type" : "Date"
+              }
+            }, {
+              "name" : "l_receiptdate",
+              "dataType" : {
+                "type" : "Date"
+              }
+            }, {
+              "name" : "l_shipinstruct",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "l_shipmode",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "l_comment",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "nation" : {
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "n_nationkey",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "n_name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "n_regionkey",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "n_comment",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "supplier" : {
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "s_suppkey",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "s_name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "s_address",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "s_nationkey",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "s_phone",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "s_acctbal",
+              "dataType" : {
+                "type" : "Decimal"
+              }
+            }, {
+              "name" : "s_comment",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "customer" : {
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "c_custkey",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "c_name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "c_address",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "c_nationkey",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "c_phone",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "c_acctbal",
+              "dataType" : {
+                "type" : "Decimal"
+              }
+            }, {
+              "name" : "c_mktsegment",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "c_comment",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "orders" : {
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "o_orderkey",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "o_custkey",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "o_orderstatus",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "o_totalprice",
+              "dataType" : {
+                "type" : "Decimal"
+              }
+            }, {
+              "name" : "o_orderdate",
+              "dataType" : {
+                "type" : "Date"
+              }
+            }, {
+              "name" : "o_orderpriority",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "o_clerk",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "o_shippriority",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "o_comment",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "region" : {
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "r_regionkey",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "r_name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "r_comment",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "part" : {
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "p_partkey",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "p_name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "p_mfgr",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "p_brand",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "p_type",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "p_size",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "p_container",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "p_retailprice",
+              "dataType" : {
+                "type" : "Decimal"
+              }
+            }, {
+              "name" : "p_comment",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "partsupp" : {
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "ps_partkey",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "ps_suppkey",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "ps_availqty",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "ps_supplycost",
+              "dataType" : {
+                "type" : "Decimal"
+              }
+            }, {
+              "name" : "ps_comment",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          }
+        }
+      } ]
+    }, {
+      "type" : "Catalog",
+      "name" : "system",
+      "children" : [ ]
+    } ]
+  },
+  "dependenciesContainer" : { },
+  "frontEndLanguage" : "sql"
+}

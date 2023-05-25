@@ -1,0 +1,597 @@
+{
+  "id" : "customers_nation",
+  "metainfo" : {
+    "label" : "customers_nation",
+    "autoLayout" : false,
+    "staleState" : "none",
+    "sourceSuggestions" : {
+      "sources" : [ ]
+    }
+  },
+  "processes" : {
+    "dfC3-jxCTrDvJ_jkFBKrH" : {
+      "id" : "dfC3-jxCTrDvJ_jkFBKrH",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "customer",
+        "slug" : "customer",
+        "x" : -500,
+        "y" : 80,
+        "phase" : 0
+      },
+      "properties" : {
+        "table" : {
+          "name" : "customer",
+          "sourceType" : "Source",
+          "sourceName" : "samples.tpch",
+          "alias" : "",
+          "additionalProperties" : null
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "oO3kL-jyLBreoz561m3LZ",
+          "schema" : {
+            "providerType" : "databricks",
+            "fields" : [ {
+              "name" : "c_custkey",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "c_name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "c_address",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "c_nationkey",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "c_phone",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "c_acctbal",
+              "dataType" : {
+                "type" : "Decimal"
+              }
+            }, {
+              "name" : "c_mktsegment",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "c_comment",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "customers_nation##ZOVGMCvu" : {
+      "id" : "customers_nation##ZOVGMCvu",
+      "component" : "TargetModel",
+      "metadata" : {
+        "label" : "customers_nation",
+        "x" : 20,
+        "y" : 0,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "customQueryDisabled" : true,
+        "customQuery" : false,
+        "incrementalEditorDisabled" : true,
+        "query" : "SELECT * \n\nFROM Aggregate_1\n",
+        "incrementalKey" : false,
+        "incremental" : {
+          "expression" : "true"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "oVMISSCK",
+          "schema" : {
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "country",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "country_code",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "total_customers",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            } ]
+          },
+          "slug" : "Aggregate_1"
+        } ],
+        "outputs" : [ {
+          "id" : "EJJjoYVR",
+          "schema" : {
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "country",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "country_code",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "total_customers",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            } ]
+          },
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "W7x23nN5yeHvLn01NI5Um" : {
+      "id" : "W7x23nN5yeHvLn01NI5Um",
+      "component" : "Seed",
+      "metadata" : {
+        "label" : "nation",
+        "slug" : "nation",
+        "x" : -500,
+        "y" : -60,
+        "phase" : 0
+      },
+      "properties" : {
+        "table" : {
+          "name" : "nation",
+          "sourceType" : "Seed",
+          "alias" : ""
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "kvo8-jpsBveXGhUfLxXEU",
+          "schema" : {
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "n_nationkey",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "n_name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "n_regionkey",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "n_comment",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "6nuD7aO0FOqdtW4w997xR$$pXY81a6eYRwCxoLSHM5Zz" : {
+      "id" : "6nuD7aO0FOqdtW4w997xR$$pXY81a6eYRwCxoLSHM5Zz",
+      "component" : "Join",
+      "metadata" : {
+        "label" : "join_on_nation_id",
+        "slug" : "join_on_nation_id",
+        "x" : -300,
+        "y" : 0,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "conditions" : [ {
+          "alias" : "in1",
+          "expression" : {
+            "expression" : "nation.n_nationkey=customer.c_nationkey"
+          },
+          "joinType" : "inner"
+        } ],
+        "expressions" : [ {
+          "expression" : {
+            "expression" : "nation.n_nationkey"
+          },
+          "alias" : "n_nationkey"
+        }, {
+          "expression" : {
+            "expression" : "nation.n_name"
+          },
+          "alias" : "n_name"
+        }, {
+          "expression" : {
+            "expression" : "nation.n_regionkey"
+          },
+          "alias" : "n_regionkey"
+        }, {
+          "expression" : {
+            "expression" : "nation.n_comment"
+          },
+          "alias" : "n_comment"
+        }, {
+          "expression" : {
+            "expression" : "customer.c_custkey"
+          },
+          "alias" : "c_custkey"
+        }, {
+          "expression" : {
+            "expression" : "customer.c_name"
+          },
+          "alias" : "c_name"
+        }, {
+          "expression" : {
+            "expression" : "customer.c_address"
+          },
+          "alias" : "c_address"
+        }, {
+          "expression" : {
+            "expression" : "customer.c_nationkey"
+          },
+          "alias" : "c_nationkey"
+        }, {
+          "expression" : {
+            "expression" : "customer.c_phone"
+          },
+          "alias" : "c_phone"
+        }, {
+          "expression" : {
+            "expression" : "customer.c_acctbal"
+          },
+          "alias" : "c_acctbal"
+        }, {
+          "expression" : {
+            "expression" : "customer.c_mktsegment"
+          },
+          "alias" : "c_mktsegment"
+        }, {
+          "expression" : {
+            "expression" : "customer.c_comment"
+          },
+          "alias" : "c_comment"
+        } ],
+        "activeTab" : "expressions",
+        "columnsSelector" : [ "2VHJdhx24M2zze8sbwuNl$$jGIzSiyGRYX6B6EPe4l6x##n_nationkey", "vBTZhmdfluawLpFpPx4TS$$vq_sgrfneuJnEUMSa-YyF##c_nationkey", "2VHJdhx24M2zze8sbwuNl$$jGIzSiyGRYX6B6EPe4l6x##n_nationkey", "2VHJdhx24M2zze8sbwuNl$$jGIzSiyGRYX6B6EPe4l6x##n_name", "2VHJdhx24M2zze8sbwuNl$$jGIzSiyGRYX6B6EPe4l6x##n_regionkey", "2VHJdhx24M2zze8sbwuNl$$jGIzSiyGRYX6B6EPe4l6x##n_comment", "vBTZhmdfluawLpFpPx4TS$$vq_sgrfneuJnEUMSa-YyF##c_custkey", "vBTZhmdfluawLpFpPx4TS$$vq_sgrfneuJnEUMSa-YyF##c_name", "vBTZhmdfluawLpFpPx4TS$$vq_sgrfneuJnEUMSa-YyF##c_address", "vBTZhmdfluawLpFpPx4TS$$vq_sgrfneuJnEUMSa-YyF##c_nationkey", "vBTZhmdfluawLpFpPx4TS$$vq_sgrfneuJnEUMSa-YyF##c_phone", "vBTZhmdfluawLpFpPx4TS$$vq_sgrfneuJnEUMSa-YyF##c_acctbal", "vBTZhmdfluawLpFpPx4TS$$vq_sgrfneuJnEUMSa-YyF##c_mktsegment", "vBTZhmdfluawLpFpPx4TS$$vq_sgrfneuJnEUMSa-YyF##c_comment" ],
+        "headAlias" : "nation"
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "2VHJdhx24M2zze8sbwuNl$$jGIzSiyGRYX6B6EPe4l6x",
+          "schema" : {
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "n_nationkey",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "n_name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "n_regionkey",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "n_comment",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "nation"
+        }, {
+          "id" : "vBTZhmdfluawLpFpPx4TS$$vq_sgrfneuJnEUMSa-YyF",
+          "schema" : {
+            "providerType" : "databricks",
+            "fields" : [ {
+              "name" : "c_custkey",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "c_name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "c_address",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "c_nationkey",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "c_phone",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "c_acctbal",
+              "dataType" : {
+                "type" : "Decimal"
+              }
+            }, {
+              "name" : "c_mktsegment",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "c_comment",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "customer"
+        } ],
+        "outputs" : [ {
+          "id" : "Ak6qrQ_w60kMDkXVk9O-l$$sr5s4MY0mZb6usaRpw60q",
+          "schema" : {
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "n_nationkey",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "n_name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "n_regionkey",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "n_comment",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "c_custkey",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "c_name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "c_address",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "c_nationkey",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "c_phone",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "c_acctbal",
+              "dataType" : {
+                "type" : "Decimal"
+              }
+            }, {
+              "name" : "c_mktsegment",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "c_comment",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "ys7lavKz_yHZYvakYFdiG$$PaRWUNLmmV4sykr-98a1E" : {
+      "id" : "ys7lavKz_yHZYvakYFdiG$$PaRWUNLmmV4sykr-98a1E",
+      "component" : "Aggregate",
+      "metadata" : {
+        "label" : "Aggregate_1",
+        "slug" : "Aggregate_1",
+        "x" : -140,
+        "y" : 0,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "aggregate" : [ {
+          "expression" : {
+            "expression" : "any_value(n_name)"
+          },
+          "alias" : "country"
+        }, {
+          "expression" : {
+            "expression" : "any_value(n_nationkey)"
+          },
+          "alias" : "country_code"
+        }, {
+          "expression" : {
+            "expression" : "count (c_custkey)"
+          },
+          "alias" : "total_customers"
+        } ],
+        "allowSelection" : true,
+        "condition" : {
+          "expression" : ""
+        },
+        "activeTab" : "aggregate",
+        "columnsSelector" : [ "emNgiYVe2-WlsQidk9I85$$yOS0txD-EmxRsubCdU4xu##n_nationkey", "emNgiYVe2-WlsQidk9I85$$yOS0txD-EmxRsubCdU4xu##n_name", "emNgiYVe2-WlsQidk9I85$$yOS0txD-EmxRsubCdU4xu##c_custkey" ],
+        "groupBy" : [ {
+          "expression" : {
+            "expression" : "n_nationkey"
+          }
+        } ]
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "emNgiYVe2-WlsQidk9I85$$yOS0txD-EmxRsubCdU4xu",
+          "schema" : {
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "n_nationkey",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "n_name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "n_regionkey",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "n_comment",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "c_custkey",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "c_name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "c_address",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "c_nationkey",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "c_phone",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "c_acctbal",
+              "dataType" : {
+                "type" : "Decimal"
+              }
+            }, {
+              "name" : "c_mktsegment",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "c_comment",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "kAKyuCkKEnEzxN7bAlukW$$I6osc_NIF2nojHXVkfnLK",
+          "schema" : {
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "country",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "country_code",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "total_customers",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            } ]
+          },
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    }
+  },
+  "connections" : [ {
+    "id" : "ERnX5VJlMdmviEO2N9weZ$$tMyYEKT_7zvaTo6JZ9PKP",
+    "source" : "W7x23nN5yeHvLn01NI5Um",
+    "sourcePort" : "kvo8-jpsBveXGhUfLxXEU",
+    "target" : "6nuD7aO0FOqdtW4w997xR$$pXY81a6eYRwCxoLSHM5Zz",
+    "targetPort" : "2VHJdhx24M2zze8sbwuNl$$jGIzSiyGRYX6B6EPe4l6x"
+  }, {
+    "id" : "atNS7sxLNl5IfH0A9mAx-$$koSLdKizMalSDYFYIp2hE",
+    "source" : "dfC3-jxCTrDvJ_jkFBKrH",
+    "sourcePort" : "oO3kL-jyLBreoz561m3LZ",
+    "target" : "6nuD7aO0FOqdtW4w997xR$$pXY81a6eYRwCxoLSHM5Zz",
+    "targetPort" : "vBTZhmdfluawLpFpPx4TS$$vq_sgrfneuJnEUMSa-YyF"
+  }, {
+    "id" : "LrPYsR2oiIP4Vvvdwtvag$$3FwETZjFmyJV8n4EMybQn",
+    "source" : "6nuD7aO0FOqdtW4w997xR$$pXY81a6eYRwCxoLSHM5Zz",
+    "sourcePort" : "Ak6qrQ_w60kMDkXVk9O-l$$sr5s4MY0mZb6usaRpw60q",
+    "target" : "ys7lavKz_yHZYvakYFdiG$$PaRWUNLmmV4sykr-98a1E",
+    "targetPort" : "emNgiYVe2-WlsQidk9I85$$yOS0txD-EmxRsubCdU4xu"
+  }, {
+    "id" : "MT7ofBssKT3YwYoSzogCx$$fqeywlmG2gR2lelCo3S2X",
+    "source" : "ys7lavKz_yHZYvakYFdiG$$PaRWUNLmmV4sykr-98a1E",
+    "sourcePort" : "kAKyuCkKEnEzxN7bAlukW$$I6osc_NIF2nojHXVkfnLK",
+    "target" : "customers_nation##ZOVGMCvu",
+    "targetPort" : "oVMISSCK"
+  } ],
+  "component" : "Model"
+}

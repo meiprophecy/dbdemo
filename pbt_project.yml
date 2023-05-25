@@ -8,7 +8,31 @@ buildSystemDetails: null
 pipelines: {}
 datasets: {}
 templates: {}
-jobs: {}
+jobs:
+  jobs/test:
+    name: test
+    description: ''
+    fabricUID: 2306
+    scheduler:
+      Databricks: {}
+    cloudProvider: null
+    jobSize: prophecy_internal_jobs
+    scheduleCron: 0 0 0 1/1 * ? *
+    timeout: null
+    alerting:
+      emails: mei@prophecy.io
+      onStart: true
+      onSuccess: true
+      onFailure: true
+    pipelines: []
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: true
+    createdAt: '2023-05-25 14:30:17'
+    modifiedAt: '2023-05-25 14:37:55'
+    author: mei@prophecy.io
 functions:
   author: null
   createdAt: '2023-05-16 21:54:41'
@@ -18,10 +42,44 @@ functions:
   udafs: {}
   expressions: {}
 subgraphs: {}
-sqlModels: {}
+sqlModels:
+  .prophecy/metadata/sqlmodels/customers_nation:
+    name: customers_nation
+    description: null
+    author: mei@prophecy.io
+    files:
+    - models/customers_nation.sql
+    - .prophecy/ide/models/customers_nation.json
+    sqlDependencies:
+      models: []
+      datasets: []
+    createdAt: '2023-05-23 15:24:13'
+    modifiedAt: '2023-05-23 15:24:13'
 sqlMacros: {}
-sqlSeeds: {}
-sqlSources: {}
+sqlSeeds:
+  .prophecy/metadata/sqlseeds/nation:
+    name: nation
+    description: null
+    author: mei@prophecy.io
+    files:
+    - seeds/nation.csv
+    createdAt: '2023-05-23 15:23:32'
+    modifiedAt: '2023-05-23 15:23:32'
+sqlSources:
+  .prophecy/metadata/sqlsources/samples_tpch:
+    name: samples.tpch
+    description: null
+    author: mei@prophecy.io
+    files:
+    - prophecy-sources/sources.yml
+    createdAt: '2023-05-23 15:30:44'
+    modifiedAt: '2023-05-23 15:30:44'
+    tables:
+    - name: customer
+      description: null
+      author: mei@prophecy.io
+      createdAt: '2023-05-23 15:30:44'
+      modifiedAt: '2023-05-23 15:30:44'
 sqlUnreferencedSources: {}
 sqlPipeline:
   name: sqlPipeline

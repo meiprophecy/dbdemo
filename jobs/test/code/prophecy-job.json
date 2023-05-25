@@ -1,0 +1,91 @@
+{
+  "metainfo" : {
+    "type" : "Databricks",
+    "fabricId" : "2306",
+    "jobId" : "jobs/test",
+    "name" : "test",
+    "schedule" : "0 0 0 1/1 * ? *",
+    "scheduleTimeZone" : "UTC",
+    "jobClusterMode" : {
+      "clusterMode" : "Single"
+    },
+    "enabled" : true,
+    "defaultClusterSize" : "prophecy_internal_jobs",
+    "alerting" : {
+      "emails" : "mei@prophecy.io",
+      "onStart" : true,
+      "onSuccess" : true,
+      "onFailure" : true
+    },
+    "maxConcurrentRuns" : 1,
+    "processDefaultSettings" : {
+      "type" : "Inherited",
+      "retries" : 0,
+      "alerting" : {
+        "emails" : "",
+        "onStart" : false,
+        "onSuccess" : false,
+        "onFailure" : false
+      }
+    },
+    "availableFabrics" : [ {
+      "id" : "2306",
+      "name" : "sql",
+      "clusterSizes" : {
+        "default" : "prophecy_internal_jobs",
+        "availableClusterSizes" : [ "prophecy_internal_jobs" ]
+      }
+    } ]
+  },
+  "processes" : {
+    "BdD-NfhL0bLTBA6ezZyfj$$XL6clts7MBYHcqGF9SJzl" : {
+      "id" : "BdD-NfhL0bLTBA6ezZyfj$$XL6clts7MBYHcqGF9SJzl",
+      "component" : "DBT",
+      "metadata" : {
+        "label" : "DBT_0",
+        "slug" : "DBT_0",
+        "x" : 140,
+        "y" : 160
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "mXFeMEbz6lY-07qqHCFCJ$$3yT0MD_CPAik43SSKJQLl",
+          "slug" : ""
+        } ],
+        "outputs" : [ {
+          "id" : "qsw3KEKFW-RYfBWWyx16p$$yp4TtBHAuN7Q622wU7vt4",
+          "slug" : ""
+        } ]
+      },
+      "settings" : {
+        "type" : "Inherited",
+        "alerting" : {
+          "emails" : "",
+          "onStart" : false,
+          "onSuccess" : false,
+          "onFailure" : false
+        }
+      },
+      "properties" : {
+        "execSeed" : true,
+        "execRun" : true,
+        "gitEntity" : "branch",
+        "projectId" : "7847",
+        "runOnlyModel" : "false",
+        "loadingModels" : false,
+        "profile" : "run_profile",
+        "sqlFabricId" : "2306",
+        "gitEntityValue" : "mei/dev",
+        "execDeps" : true,
+        "execTest" : false,
+        "currentProjectModels" : [ {
+          "label" : "customers_nation",
+          "value" : "customers_nation",
+          "id" : "7847/.prophecy/metadata/sqlmodels/customers_nation",
+          "name" : "customers_nation"
+        } ]
+      }
+    }
+  },
+  "connections" : [ ]
+}
